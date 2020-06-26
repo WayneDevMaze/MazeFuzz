@@ -12,7 +12,7 @@
 cd afl
 bash build.sh
 ```
-正常情况下会生成四个文件：
+正常情况下会生成四个文件：  
 maze.back：gcc编译的程序，运行后退  
 maze.back.afl：afl-gcc编译的程序，运行后退  
 maze.forward：gcc编译的程序  
