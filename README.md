@@ -35,7 +35,7 @@ bash run.sh afl in_dir_path out_dir_path
 ------
 ## 文件说明
 ### afl
-`run.sh`:提供AFL模式脚本，如果对afl-fuzz -m none -t 250 -i afl/input -o afl/output ./maze.forward.afl  
+`run.sh`:提供AFL模式脚本，如果对afl脚本有修改计划，就直接该这一段即可：`afl-fuzz -m none -t 250 -i afl/input -o afl/output ./maze.forward.afl`  
 ~~还需要加一些AFL衍生的fuzzer，目前计划是：[iJon]()、[mopt-afl]()、[qsym]()，可以在文件夹找到相应脚本。~~  
 
 `build.sh`:如果想要改fuzzer，可以在基础上新加cc环境，或者直接对`FuzzCC=afl-gcc`进行修改。
