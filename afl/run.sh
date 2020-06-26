@@ -7,7 +7,7 @@ then
         then
         afl-fuzz -m none -t 250 -i $2 -o $3 ./maze.forward.afl
         else
-        afl-fuzz -m none -t 250 -i afl/input -o afl/output ./maze.forward.afl
+        afl-fuzz -m none -t 250 -i input -o output ./maze.forward.afl
         fi
     esac
 else
