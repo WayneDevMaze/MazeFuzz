@@ -44,4 +44,5 @@ bash run.sh afl in_dir_path out_dir_path
 >-DMAZE_BACK:是否可以回退，如果可以回退，那么maze难度将增加  
 
 ### src
-`main.c`:主程序，目前还没有实现draw函数。
+`main.c`:主程序，目前还没有实现draw函数。  
+如果要对地图进行修改，直接在开头定义那里，改地图数组和数组对应的宽高的宏定义。  
