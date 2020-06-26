@@ -1,4 +1,4 @@
-if [ '$1' ]
+if [ "$1" ]
 then
     echo "start fuzzing with $1\n"
     case " $1 " in
