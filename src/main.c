@@ -24,12 +24,19 @@ enum mode
 #define MAZE_W 6
 //
 char maze[MAZE_H][MAZE_W] = {	"+---+",
-								"| |$|",
-								"|   |",
-								"+---+" };
+				"| |$|",
+				"|   |",
+				"+---+" };
 
 void draw(){
-
+	for(int i=0;i<MAZE_H;i++){
+		for(int j=0;j<MAZE_W;j++){
+			printf("%c",maze[i][j]);
+		}
+		printf("\n");
+	}
+//printf("+---+\n");
+    
 }
 
 int main (int _argc, char *_argv[])
@@ -72,7 +79,7 @@ int main (int _argc, char *_argv[])
 		}
 		if(maze[c_y][c_x] == '$'){
 			//终点
-			printf("U Win!");
+			printf("U Win!\n");
 #ifndef FUZZ_MAZE
 			draw();
 #else

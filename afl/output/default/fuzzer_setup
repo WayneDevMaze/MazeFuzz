@@ -1,0 +1,3 @@
+# environment variables:
+# command line:
+'/home/tao/Desktop/javafuzz/fuzzer/AFLplusplus/afl-fuzz' '-D' '-m' 'none' '-t' '250' '-i' 'afl/input' '-o' 'afl/output' './afl/maze.forward.afl'
