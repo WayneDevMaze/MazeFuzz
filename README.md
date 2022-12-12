@@ -2,12 +2,15 @@
 提供一种迷宫的方式测试符号执行的效率，希望通过这种方式为不同的fuzzer创造统一的结果标准。  
 
 ------
-## 食用方式（以AFL为例）
+## 以AFL为例
 ### 安装Fuzzer —— AFL
 如果已经是fuzz有经验可以略过这一步，如果是萌新可以看这篇安装AFL，并进行简单的了解：  
 [AFL入门第一次测试](https://www.cnblogs.com/wayne-tao/p/11739420.html)   
 
-### 编译环境  
+### 编译环境
+
+> change the evn
+
 ```bash
 cd afl
 bash build.sh

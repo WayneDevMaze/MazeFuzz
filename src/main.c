@@ -79,9 +79,9 @@ int main (int _argc, char *_argv[])
 		}
 		if(maze[c_y][c_x] == '$'){
 			//终点
-			printf("U Win!\n");
+			printf("============= U Win! ============\n");
 #ifndef FUZZ_MAZE
-			draw();
+			//draw();
 #else
 #endif
 			assert(0);

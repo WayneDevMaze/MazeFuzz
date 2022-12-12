@@ -1,5 +1,5 @@
 #[AFL] replace the path by your env
-afl_path=/home/tao/Desktop/javafuzz/fuzer/afl
+afl_path=/home/tao/Desktop/javafuzz/fuzer/afl/AFL-2.57b/afl-fuzz
 #[AFL++] replace the path
 aflPP_path=/home/tao/Desktop/javafuzz/fuzzer/AFLplusplus/afl-fuzz
 #[MOpt] replace the path by your env
@@ -21,9 +21,9 @@ if [ "$1" ] ; then
     case " $1 " in " afl++ ") 
         if [ "$2" ]
         then
-            $aflPP_path -D -m none -t 250 -i $2 -o $3 ./afl/maze.forward.afl
+            $aflPP_path -D -m none -t 250 -i $2 -o $3 ./afl++/maze.forward.afl
         else
-            $aflPP_path -D -m none -t 250 -i afl/input -o afl/output ./afl/maze.forward.afl
+            $aflPP_path -D -m none -t 250 -i afl++/input -o afl++/output ./afl/maze.forward.afl
         fi
     esac
     case " $1 " in " mopt ")
